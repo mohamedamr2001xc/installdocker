@@ -4,6 +4,9 @@ pipeline {
             label 'Linuxagent'
             }
       }
+      triggers{
+        pollSCM '* * * * *'
+      }
     stages {
         stage('DeployDocker') {
             steps {
