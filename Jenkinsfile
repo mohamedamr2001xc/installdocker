@@ -14,7 +14,8 @@ pipeline {
                 sh '''
                 echo "doing build stuff.."
                 '''
-                sh 'echo "Admin12" | sudo -S ls'
+                sh 'echo "Admin12" | sudo -S chmod +rwx docker.sh'
+                sh 'echo "Admin12" | sudo -S ./docker.sh'
             }
         }
         stage('DeployGitTea') {
