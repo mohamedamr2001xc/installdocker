@@ -14,7 +14,7 @@ pipeline {
                 sh '''
                 echo "doing build stuff.."
                 '''
-                sh "echo 'Admin12' | sudo -S ./docker.sh"
+                sh "echo 'Admin12' | sudo -S source docker.sh"
             }
         }
         stage('DeployGitTea') {
