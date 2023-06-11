@@ -10,3 +10,4 @@ curl -sSL https://github.com/docker/compose/releases/download/v$(curl -Ls https:
 
 
 chmod +x /usr/local/bin/docker-compose
+
